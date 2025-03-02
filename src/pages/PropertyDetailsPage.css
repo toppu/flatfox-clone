@@ -1,0 +1,349 @@
+/* PropertyDetailsPage.css */
+
+.property-details-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #333;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: #0078d4;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.breadcrumb span {
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+/* Property Header */
+.property-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.property-title-section h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.property-address {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+.property-price-section {
+  text-align: right;
+}
+
+.property-price {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: #0078d4;
+}
+
+.favorite-button {
+  background-color: white;
+  border: 1px solid #0078d4;
+  color: #0078d4;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.favorite-button:hover {
+  background-color: #f0f8ff;
+}
+
+/* Gallery */
+.property-gallery {
+  margin-bottom: 30px;
+}
+
+.main-image {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnail-gallery {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 5px;
+}
+
+.thumbnail {
+  width: 120px;
+  height: 80px;
+  flex-shrink: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnail.active {
+  opacity: 1;
+  box-shadow: 0 0 0 2px #0078d4;
+}
+
+/* Property Content Layout */
+.property-content {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.property-details-section {
+  flex: 2;
+}
+
+.property-sidebar {
+  flex: 1;
+}
+
+/* Property Details */
+.property-details-section h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  color: #222;
+}
+
+.property-details-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 24px 0 12px 0;
+  color: #222;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 24px;
+}
+
+.detail-item {
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.detail-label {
+  display: block;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.detail-value {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.property-description {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.features-list {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.feature-item {
+  padding: 8px 0;
+  position: relative;
+  padding-left: 24px;
+}
+
+.feature-item::before {
+  content: "✓";
+  color: #0078d4;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Sidebar */
+.contact-card, .location-card {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-card h3, .location-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+}
+
+.landlord-name {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.landlord-contact {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: none;
+  font-family: inherit;
+}
+
+.contact-btn, .schedule-viewing-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.contact-btn {
+  background-color: #0078d4;
+  color: white;
+}
+
+.schedule-viewing-btn {
+  background-color: white;
+  border: 1px solid #0078d4;
+  color: #0078d4;
+}
+
+.contact-btn:hover {
+  background-color: #006cbd;
+}
+
+.schedule-viewing-btn:hover {
+  background-color: #f0f8ff;
+}
+
+.map-placeholder {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.map-placeholder img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.map-address {
+  font-size: 14px;
+  margin: 10px 0 0 0;
+  color: #666;
+}
+
+/* Similar Properties */
+.similar-properties {
+  margin-top: 40px;
+}
+
+.similar-properties h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.see-more-link a {
+  color: #0078d4;
+  text-decoration: none;
+}
+
+/* Loading and Error States */
+.loading-container, .error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .property-header {
+    flex-direction: column;
+  }
+  
+  .property-price-section {
+    text-align: left;
+    margin-top: 15px;
+  }
+  
+  .property-content {
+    flex-direction: column;
+  }
+  
+  .main-image {
+    height: 350px;
+  }
+  
+  .details-grid, .features-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-image {
+    height: 250px;
+  }
+  
+  .thumbnail {
+    width: 80px;
+    height: 60px;
+  }
+}

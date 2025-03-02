@@ -1,0 +1,192 @@
+/* HomePage.css - Specific styles for HomePage.tsx */
+
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero-section {
+  /* background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/api/placeholder/1200/600'); */
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin: 20px 0 40px;
+  padding: 80px 40px;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: var(--white);
+  color: var(--dark-gray);
+}
+
+/* Featured Properties Section */
+.featured-section {
+  margin: 60px 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.section-header h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.view-all-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Cities Section */
+.cities-section {
+  margin: 60px 0;
+}
+
+.cities-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+}
+
+.cities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.city-card {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: var(--dark-gray);
+  transition: transform 0.2s ease;
+}
+
+.city-card:hover {
+  transform: translateY(-5px);
+}
+
+.city-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+}
+
+.city-card p {
+  margin: 0;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/* How It Works Section */
+.how-it-works {
+  background-color: var(--light-gray);
+  padding: 60px 20px;
+  margin: 60px -20px;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.step {
+  flex-basis: 200px;
+}
+
+.step-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.step h3 {
+  margin: 0 0 8px 0;
+}
+
+.step p {
+  color: var(--dark-gray);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 20px;
+  }
+  
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .property-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .steps-container {
+    gap: 40px;
+  }
+}

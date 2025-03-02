@@ -1,0 +1,117 @@
+/* PropertyCard.css */
+.property-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.property-card.premium {
+  border: 1px solid #FFD700;
+}
+
+.new-badge,
+.premium-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.new-badge {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.premium-badge {
+  background-color: #FFD700;
+  color: #333;
+}
+
+.property-image {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.property-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-count {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.property-details {
+  padding: 15px;
+}
+
+.property-title {
+  margin: 0 0 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.property-location {
+  color: #666;
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+.property-specs {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.property-price {
+  font-weight: 600;
+  color: #0057B8;
+  font-size: 18px;
+  margin: 0;
+}
+
+.favorite-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.favorite-button:hover {
+  color: #e74c3c;
+}

@@ -1,0 +1,27 @@
+ /* App.css - Main application styles */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 70px; /* To account for fixed header */
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+a {
+  text-decoration: none;
+  color: #0057B8;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #003E82;
+}

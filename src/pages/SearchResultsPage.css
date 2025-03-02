@@ -1,0 +1,152 @@
+/* SearchResultsPage.css */
+.search-results-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.search-header {
+  margin-bottom: 20px;
+}
+
+.search-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.search-header p {
+  color: #666;
+  margin: 0;
+}
+
+.search-container {
+  display: flex;
+  gap: 25px;
+}
+
+.search-sidebar {
+  flex: 0 0 280px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
+}
+
+.search-results {
+  flex: 1;
+}
+
+.results-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.sort-controls {
+  display: flex;
+  align-items: center;
+}
+
+.sort-controls label {
+  margin-right: 10px;
+  color: #666;
+}
+
+.sort-controls select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+}
+
+.view-controls {
+  display: flex;
+}
+
+.view-btn {
+  padding: 8px 12px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+}
+
+.view-btn:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.view-btn:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.view-btn.active {
+  background-color: #f55;
+  border-color: #f55;
+  color: #fff;
+}
+
+.loading-indicator {
+  padding: 40px;
+  text-align: center;
+  color: #666;
+}
+
+.properties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.properties-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.no-results h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.no-results p {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+  }
+  
+  .search-sidebar {
+    flex: 0 0 auto;
+    width: 100%;
+    margin-bottom: 20px;
+    position: static;
+  }
+  
+  .properties-grid {
+    grid-template-columns: 1fr;
+  }
+}
